@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const SpotSchema = new mongoose.Schema({
-    image  : String,
-    company: String,
-    price  : Number,
-    techs  : [String],
-    user   : {
+    thumbnail : String,
+    company   : String,
+    price     : Number,
+    techs     : [String],
+    user      : {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Model_user'
     }
