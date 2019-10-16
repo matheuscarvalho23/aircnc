@@ -30,7 +30,7 @@ export default function Login({ navigation }) {
   }
 
   return (
-    <KeyboardAvoidingView enabled={Platform.OS} behaviorstyle="padding" style={styles.container}>
+    <KeyboardAvoidingView enabled={Platform.OS} behavior style="padding" style={styles.container}>
       <Image source={logo}/>
       {/* <Text style={styles.sub}>De GP's</Text> */}
       <View style={styles.form}>
