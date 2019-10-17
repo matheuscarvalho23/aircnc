@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
+import { withNavigation } from "react-navigation";
 import { View, Image, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import api from '../services/api';
 
-export default function SpotList({tech}) {
+function SpotList({tech, navigation}) {
 
   const [spots, setSpots] = useState([]);
 
@@ -16,6 +17,10 @@ export default function SpotList({tech}) {
     }
     loadSpots();
   }, []);
+
+  function handleNavigate(id) {
+    navigation.navigate('Book',{ id })
+  }
 
   return (
     <View style={styles.container}>
@@ -32,7 +37,7 @@ export default function SpotList({tech}) {
           <Image style={styles.thumbnail} source={{ uri: "https://facebook.github.io/react-native/img/tiny_logo.png" }}/>
           <Text style={styles.company}>{item.company}</Text>
           <Text style={styles.price}>{item.price ? `R$${item.price}/dia`: 'GRATUITO'}</Text>
-          <TouchableOpacity onPress={() => {}} style={styles.button}>
+          <TouchableOpacity onPress={() => handleNavigate(item._id)} style={styles.button}>
             <Text style={styles.buttonText}>Solicitar Reserva</Text>
           </TouchableOpacity>
           </View>
@@ -56,7 +61,8 @@ const styles = StyleSheet.create({
   },
 
   techs: {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: 'green'
   },
 
   list: {
@@ -100,3 +106,5 @@ const styles = StyleSheet.create({
     fontSize: 14
   }
 });
+
+export default withNavigation(SpotList);
