@@ -49,6 +49,8 @@ const styles = StyleSheet.create({
   line: {
     borderWidth: 0.5,
     borderColor: '#999',
-    margin: 10
+    marginLeft: 50,
+    marginRight: 50,
+    marginTop: 10
   }
 });
