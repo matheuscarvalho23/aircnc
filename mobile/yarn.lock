@@ -1746,9 +1746,9 @@ decamelize@^1.1.1:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-assign@^3.0.0:
   version "3.0.0"
@@ -1985,6 +1985,11 @@ expo-constants@~7.0.0:
   integrity sha512-oLINuMtGcAwfHGInSVhq6xGojp3atUpSIp7KImo9rqXhWwD5FNmqA5Jflo4J0ODPq590kN5ieiYCCqwls2/u0w==
   dependencies:
     ua-parser-js "^0.7.19"
+
+expo-file-system-interface@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/expo-file-system-interface/-/expo-file-system-interface-3.0.0.tgz#3fdf7b857ef9abba1d151f0cb9ac69992c24d42b"
+  integrity sha512-WhTcPYScRtmQJtrFX7UvFxrhHE/OQpoLtRfz7FWvT/LYxlLCDOs8dO5gNBYsUidZY+T5TqdxVH1XQXxr1KUOzw==
 
 expo-file-system@~7.0.0:
   version "7.0.0"
